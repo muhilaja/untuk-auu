@@ -49,8 +49,8 @@ export default function Utama() {
             className="z-10"
           >
             <motion.img
-            https://raw.githubusercontent.com/muhilaja/untuk-auu/main/public/auu2.jpg
-
+              src="/auu2.jpg"
+              alt="Foto Tergantung"
               className="w-44 h-44 sm:w-64 sm:h-75 object-cover rounded-xl border-4 border-pink-400 shadow-xl"
               initial={{ y: -20 }}
               animate={{ y: [0, 10, -10, 0] }}
