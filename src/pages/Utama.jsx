@@ -12,7 +12,7 @@ export default function Utama() {
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-pink-50 via-pink-100 to-pink-200 px-4 py-8 relative overflow-hidden font-[Poppins]">
       {/* Audio Otomatis */}
       <audio autoPlay loop>
-        <source src="/song.mp3" type="audio/mpeg" />
+        <source src={import.meta.env.BASE_URL + "song.mp3"} type="audio/mpeg" />
         Browser tidak mendukung audio.
       </audio>
 
