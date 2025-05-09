@@ -15,7 +15,7 @@ export default function NotFound() {
           />
         </div>
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-pink-500 mb-4 drop-shadow-[0_0_10px_rgba(236,72,153,0.4)]">
-          Oops! Salah ketik, sayang…
+          Oops! Ke beranda dulu…
         </h1>
         <Link
           to="/"

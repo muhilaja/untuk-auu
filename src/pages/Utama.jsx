@@ -25,8 +25,8 @@ export default function Utama() {
           className="bg-white shadow-2xl rounded-3xl p-6 sm:p-10 w-full sm:w-1/2 text-center border-4 border-pink-200 backdrop-blur-sm bg-opacity-90"
         >
           <img
-            src="/auu.png"
-            alt="Foto Ulang Tahun"
+            src={import.meta.env.BASE_URL + "auu.png"}
+            alt="Foto"
             className="w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-full mx-auto border-4 border-pink-400 shadow-lg mb-6"
           />
           <h1 className="text-3xl sm:text-4xl font-bold text-pink-600 mb-4 drop-shadow-md tracking-wide">
@@ -49,8 +49,8 @@ export default function Utama() {
             className="z-10"
           >
             <motion.img
-              src="/auu2.jpg"
-              alt="Foto Tergantung"
+            https://raw.githubusercontent.com/muhilaja/untuk-auu/main/public/auu2.jpg
+
               className="w-44 h-44 sm:w-64 sm:h-75 object-cover rounded-xl border-4 border-pink-400 shadow-xl"
               initial={{ y: -20 }}
               animate={{ y: [0, 10, -10, 0] }}

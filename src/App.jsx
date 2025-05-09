@@ -11,10 +11,10 @@ export default function App() {
       <div id="layout-wrapper" className="flex flex-row flex-1">
         <div id="main-content" className="flex-1 p-4">
           <Routes>
-            <Route path="*" element={<NotFound />} />
             <Route path="/" element={<Login />} />
             <Route path="utama" element={<Utama />} />
             <Route path="katapuitis" element={<KataPuitis />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>
