@@ -49,7 +49,7 @@ export default function Utama() {
             className="z-10"
           >
             <motion.img
-              src="/auu2.jpg"
+              src={import.meta.env.BASE_URL + "auu2.jpg"} // Menggunakan BASE_URL untuk konsistensi
               alt="Foto Tergantung"
               className="w-44 h-44 sm:w-64 sm:h-75 object-cover rounded-xl border-4 border-pink-400 shadow-xl"
               initial={{ y: -20 }}
