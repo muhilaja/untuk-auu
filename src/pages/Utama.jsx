@@ -10,14 +10,12 @@ export default function Utama() {
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-pink-50 via-pink-100 to-pink-200 px-4 py-8 relative overflow-hidden font-[Poppins]">
-      {/* Audio Otomatis */}
       <audio autoPlay loop>
         <source src={import.meta.env.BASE_URL + "song.mp3"} type="audio/mpeg" />
         Browser tidak mendukung audio.
       </audio>
 
       <div className="flex flex-col sm:flex-row items-start justify-start w-full max-w-screen-lg mx-auto space-y-8 sm:space-y-0 sm:space-x-8 z-10">
-        {/* Kartu Ucapan */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,7 +37,6 @@ export default function Utama() {
           </p>
         </motion.div>
 
-        {/* Foto tergantung & tombol */}
         <div className="relative w-full flex flex-col items-center mt-32 sm:mt-0 sm:w-1/2">
           <motion.div
             drag
@@ -49,7 +46,7 @@ export default function Utama() {
             className="z-10"
           >
             <motion.img
-              src={import.meta.env.BASE_URL + "auu2.jpg"} // Menggunakan BASE_URL untuk konsistensi
+              src={import.meta.env.BASE_URL + "auu2.jpg"}
               alt="Foto Tergantung"
               className="w-44 h-44 sm:w-64 sm:h-75 object-cover rounded-xl border-4 border-pink-400 shadow-xl"
               initial={{ y: -20 }}
@@ -69,7 +66,6 @@ export default function Utama() {
         </div>
       </div>
 
-      {/* Wiggle keyframe */}
       <style jsx>{`
         .animate-wiggle {
           animation: wiggle 1.5s ease-in-out infinite;
