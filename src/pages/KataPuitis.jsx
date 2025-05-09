@@ -12,7 +12,7 @@ export default function KataPuitis() {
     <div className="min-h-screen w-full bg-gradient-to-br from-pink-50 via-pink-100 to-pink-200 px-6 py-8 relative font-[Poppins]">
       {/* Audio Otomatis */}
       <audio autoPlay loop>
-        <source src="/song.mp3" type="audio/mpeg" />
+        <source src={import.meta.env.BASE_URL + "song.mp3"} type="audio/mpeg" />
         Browser tidak mendukung audio.
       </audio>
 
@@ -34,7 +34,7 @@ export default function KataPuitis() {
           </p>
 
           <motion.img
-            src="/auu3.jpg"
+            src={import.meta.env.BASE_URL + "auu3.jpg"} // Menggunakan BASE_URL untuk konsistensi
             alt="Foto Ulang Tahun"
             className="w-full sm:w-full lg:w-full h-auto object-cover mx-auto border-4 border-pink-400 shadow-lg mb-8"
             initial={{ y: -20 }}
